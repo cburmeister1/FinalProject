@@ -19,17 +19,17 @@ const Navbar = () => (
         <li
           className={
             window.location.pathname === "/" ||
-            window.location.pathname === "/items"
+            window.location.pathname === "/reserve"
               ? "active"
               : ""
           }
         >
-          <Link to="/items">Find Items</Link>
+          <Link to="/reserve">Reserve Items</Link>
         </li>
         <li
-          className={window.location.pathname === "/add" ? "active" : ""}
+          className={window.location.pathname === "/donate" ? "active" : ""}
         >
-          <Link to="/Add">Add Items</Link>
+          <Link to="/donate">Donate Food</Link>
         </li>
         <li className={window.location.pathname === "/profile" ? "active" : ""}>
           <Link to="/profile">Profile</Link>
